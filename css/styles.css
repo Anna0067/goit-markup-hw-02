@@ -1,7 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+
+:root {
+    --brand-color: #2196f3;
+    --title: #ffffff;
+    --black: #212121;
+    --backgroud-grey: #2f303a;
+    --button-white: #f5f4fa;
+    --grey: #757575;
+}
+
 .title {
     font-family: "Raleway", sans-serif;
-    color: #ffffff;
-    background-color: #2f303a;
+    color: var(--title);
+    background-color: var(--backgroud-grey);
     font-style: normal;
     font-weight: 700;
     font-size: 44px;
@@ -12,7 +23,7 @@
 }
 body {
     font-family: "Roboto", sans-serif;
-    color: #212121;
+    color: var(--black);
 }
 
 .logo {
@@ -20,19 +31,21 @@ body {
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.4;
     letter-spacing: 0.03em;
     text-decoration: none;
     display: inline;
     text-shadow: 2px, 2px, 4px, #212121;
-    color: #2196f3;
-    color: #000000;
+    color: var(--brand-color);
+    color: var(--black);
+}
+.logo-web {
+    color: var(--brand-color);
 }
 
 .links {
-    color: #212121;
+    color: var(--black);
     cursor: pointer;
-    justify-content: center;
     display: inline;
     text-decoration: none;
     font-size: inherit;
@@ -40,62 +53,129 @@ body {
 }
 .links:active,
 .links:hover {
-    color: #2196f3;
+    color: var(--brand-color);
 }
-.links-contact {
-    color: #757575;
+.links .links-contact {
+    color: var(--grey);
     font-size: 14px;
     font-size: inherit;
     font-weight: 500;
     justify-content: right;
-    display: inline;
 }
-.links-contact:active,
+.links .links-contact:active,
 .links-contact:hover {
-    color: #2196f3;
+    color: var(--brand-color);
 }
 a {
     text-decoration: none;
-    color: #757575;
+    color: var(--grey);
     .a:active,
     .a:hover {
-        color: #2196f3;
+        color: var(--brand-color);
     }
 }
 .main-button {
-    color: #ffffff;
+    color: var(--title);
     cursor: pointer;
-    position: absolute;
-    width: 200px;
-    height: 50px;
-    left: 700px;
-    top: 430px;
-    padding: 4px;
-    background-color: #2196f3;
+    background-color: var(--brand-color);
     font-weight: 700;
     font-size: 16px;
 }
 
-.portfolio-button {
+.lorem-ipsum {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    display: flex;
+}
+.lorem-ipsum-text {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--grey);
+    display: flex;
+}
+
+.headings {
+    font-size: 36px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.john-doe {
+    font-weight: 500;
+}
+.john-doe-job {
+    font-weight: 400;
+    font-style: normal;
+    color: var(--grey);
+}
+
+.john-doe-description {
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.portfolio-buttons {
     cursor: pointer;
     justify-content: center;
     font-family: "Roboto";
     font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
-    background: F5F4FA;
+    line-height: 1.6;
+    background: var(--button-white);
     border-radius: 4px;
     text-align: center;
     letter-spacing: 0.03em;
     padding: 6px 22px 6px 22px;
-    border: #f5f4fa;
-    display: flex;
+    border: var(--button-white);
 }
-.portfolio-button:hover {
-    background: #2196f3;
-    color: #ffffff;
+.portfolio-buttons:hover {
+    background: var(--brand-color);
+    color: var(--button-white);
 }
-.portfolio-button:focus {
-    background: #2196f3;
-    color: #ffffff;
+.portfolio-buttons:focus {
+    background: var(--brand-color);
+    color: var(--title);
+}
+.portfolio-img-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    color: var(--black);
+    letter-spacing: 0.06em;
+}
+
+.portfolio-image-description {
+    color: var(--grey);
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+}
+.logo-web-footer {
+    font-family: "Raleway", sans-serif;
+    color: var(--title);
+    font-weight: 700;
+    font-size: 26px;
+    background-color: var(--backgroud-grey);
+}
+
+.footer {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--title);
+    background-color: #212121;
+}
+.footer-contact {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    line-height: 1.7;
+    cursor: pointer;
+}
+.footer-contact:active,
+.footer-contact:hover {
+    color: var(--brand-color);
 }
