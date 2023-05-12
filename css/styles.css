@@ -179,3 +179,6 @@ a {
 .footer-contact:hover {
     color: var(--brand-color);
 }
+.ul {
+    list-style-type: none;
+}
