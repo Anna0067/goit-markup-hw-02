@@ -98,6 +98,9 @@ body {
     text-align: center;
     font-weight: 700;
 }
+.john-doe-section {
+    background-color: var(--button-white);
+}
 
 .john-doe {
     font-weight: 500;
