@@ -9,6 +9,12 @@
     --grey: #757575;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 .title {
     font-family: "Raleway", sans-serif;
     color: var(--title);
@@ -21,9 +27,20 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
+
 body {
     font-family: "Roboto", sans-serif;
     color: var(--black);
+}
+
+.menu-left {
+    display: flex;
+    justify-content: flex-start;
+}
+.menu-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .logo {
@@ -52,6 +69,7 @@ body {
     font-weight: 500;
     display: flex;
     text-decoration: none;
+    display: inline;
 }
 .links:active,
 .links:hover {
@@ -64,6 +82,7 @@ body {
     font-weight: 500;
     justify-content: right;
 }
+
 .links .links-contact:active,
 .links-contact:hover {
     color: var(--brand-color);
@@ -75,6 +94,11 @@ body {
     background-color: var(--brand-color);
     font-weight: 700;
     font-size: 16px;
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 685px;
+    top: 488px;
 }
 
 .lorem-ipsum {
@@ -83,23 +107,43 @@ body {
     line-height: 1.1;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    display: flex;
 }
 .lorem-ipsum-text {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--grey);
-    display: flex;
 }
-
+.lorem-ipsum-container {
+    display: flex;
+    width: 1170px;
+    height: 101px;
+    margin: auto;
+    padding: 0 30px;
+    gap: 30px;
+}
 .headings {
     font-size: 36px;
     text-align: center;
     font-weight: 700;
 }
+
+.img-container {
+    display: flex;
+    width: 1170px;
+    height: 386px;
+    margin: auto;
+    gap: 30px;
+}
+.john-doe-container {
+    display: flex;
+}
+
 .john-doe-section {
     background-color: var(--button-white);
+    width: 1600px;
+    height: 648px;
+    margin-bottom: 94px;
 }
 
 .john-doe {
@@ -114,6 +158,13 @@ body {
 .john-doe-description {
     text-align: center;
     letter-spacing: 0.03em;
+}
+
+.john-doe-description-container {
+    margin: 0;
+    padding: 20px;
+    background-color: var(--title);
+    gap: 30px;
 }
 
 .portfolio-buttons {
@@ -138,12 +189,20 @@ body {
     background: var(--brand-color);
     color: var(--title);
 }
+
 .portfolio-img-title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     color: var(--black);
     letter-spacing: 0.06em;
+    padding: 20px 24px 4px 24px;
+}
+
+.portfolio-images {
+    border-style: solid;
+    border-color: #eeeeee;
+    border-width: 1px;
 }
 
 .portfolio-image-description {
@@ -151,7 +210,16 @@ body {
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
+    padding: 4px 24px 20px 24px;
 }
+
+.portfolio-img-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
 .logo-web-footer {
     font-family: "Raleway", sans-serif;
     color: var(--title);
@@ -167,6 +235,8 @@ body {
     line-height: 1.7;
     color: var(--title);
     background-color: var(--backgroud-grey);
+    width: 1600px;
+    height: 252px;
 }
 .footer-contact {
     color: rgba(255, 255, 255, 0.6);
@@ -180,6 +250,7 @@ body {
 }
 .ul {
     list-style-type: none;
+    display: inline;
 }
 a {
     text-decoration: none;
